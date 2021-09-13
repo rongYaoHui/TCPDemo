@@ -27,7 +27,6 @@ public class TCPDemo3 {
         while((len1 = is.read(bytes)) != -1){
             baos.write(bytes,0,len1);
         }
-        System.out.println("baos:"+ baos);
         baos.close();
         os.close();
         fis.close();
