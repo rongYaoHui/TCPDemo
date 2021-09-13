@@ -11,6 +11,7 @@ public class TCPDemo3 {
 
     @Test
     public void client() throws IOException {
+        System.out.println("1");
         Socket socket = new Socket(InetAddress.getByName("localhost"), 9090);
         OutputStream os = socket.getOutputStream();
         FileInputStream fis = new FileInputStream(new File("phone.jpg"));
